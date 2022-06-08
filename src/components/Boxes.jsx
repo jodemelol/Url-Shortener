@@ -5,7 +5,7 @@ import fully from "../assets/icon-fully-customizable.svg";
 
 export function Boxes() {
   return (
-    <Stack direction={["column", , , "row"]} justify="center" spacing={0}>
+    <Stack direction={{base:"column", xl:"row"}} justify="center" spacing={0}>
       <Box
         bg="white"
         maxW="sm"
@@ -22,7 +22,7 @@ export function Boxes() {
           p={4}
           pos="relative"
           top="-8"
-          left={[105, , , 0]}
+          left={{base:105, xl:0}}
         >
           <Image src={brand} alt={brand} />
         </Box>
@@ -30,7 +30,7 @@ export function Boxes() {
           fontWeight="bold"
           fontSize={22}
           pb={6}
-          textAlign={["center", "none", "none", "initial"]}
+          textAlign={{base:"center", xl: "initial"}}
         >
           Brand Reconigtion
         </Text>
@@ -38,7 +38,7 @@ export function Boxes() {
           opacity="0.5"
           fontSize={14}
           pb={10}
-          textAlign={["center", "none", "none", "initial"]}
+          textAlign={{base:"center", xl: "initial"}}
         >
           Boost your brand recognition with each click. Generic links don’t mean
           a thing. Branded links help instil confidence in your content.
@@ -91,12 +91,13 @@ export function Boxes() {
         </Text>
       </Box>
       <Box
-        width={[2, , , 20]}
-        height={[16, , , 2]}
+      
+        width={{base:2, xl:20}}
+        height={{base:16, xl:2}}
         bg="primary"
         pos="relative"
-        top={["120", , , "255"]}
-        left={["170", , , "0"]}
+        top={{base:120, xl:255}}
+        left={{base:170, xl:0}}
       ></Box>
       <Box
         bg="white"
@@ -104,7 +105,7 @@ export function Boxes() {
         px={10}
         borderRadius={10}
         pos="relative"
-        top={["135", , , "205"]}
+        top={{base:135, xl:205}}
       >
         <Box
           bg="secondary"
@@ -114,7 +115,7 @@ export function Boxes() {
           p={4}
           pos="relative"
           top="-8"
-          left={[105, , , 0]}
+          left={{base:105, xl:0}}
         >
           <Image src={fully} alt={fully} />
         </Box>
@@ -122,7 +123,7 @@ export function Boxes() {
           fontWeight="bold"
           fontSize={22}
           pb={6}
-          textAlign={["center", "none", "none", "initial"]}
+          textAlign={{base:"center", xl:"initial"}}
         >
           Fully Customizable
         </Text>
@@ -130,7 +131,7 @@ export function Boxes() {
           opacity="0.5"
           fontSize={14}
           pb={10}
-          textAlign={["center", "none", "none", "initial"]}
+          textAlign={{base:"center", xl:"initial"}}
         >
           Improve brand awareness and content discoverability through
           customizable links, supercharging audience engagement.

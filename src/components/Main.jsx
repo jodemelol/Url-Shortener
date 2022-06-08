@@ -10,8 +10,8 @@ export function Main({ list }) {
             <Stack
               key={item.id}
               justify="space-between"
-              direction={["column", , , "row"]}
-              align={["flex-start", , , "center"]}
+              direction={{base:"column", xl:"row"}}
+              align={{base:"flex-start", xl:"center"}}
               bg="white"
               py={2}
               px={4}
@@ -22,13 +22,13 @@ export function Main({ list }) {
               <Text>{item.url} </Text>
               <Stack
                 justify="space-between"
-                spacing={[4, , , 8]}
-                direction={["column", , , "row"]}
-                align={["initial", , , "center"]}
+                spacing={{base:4, xl:8}}
+                direction={{base:"column", xl:"row"}}
+                align={{base:"initial", xl:"center"}}
               >
                 <Text color="primary">{item.corto}</Text>
                 <Button
-                  w={["320px", , , "100px"]}
+                  w={{base:"320px", xl:"100px"}}
                   variant="primary"
                   onClick={() => {
                     navigator.clipboard.writeText(item.corto);
@@ -47,7 +47,7 @@ export function Main({ list }) {
           textAlign="center"
           opacity="0.5"
           fontSize={16}
-          px={["0", , , "200px"]}
+          px={{base:0, xl:"200px"}}
           mt={4}
         >
           Track how your links are performing across the web with our advanced

@@ -11,8 +11,8 @@ export function Footer() {
     <Box bg="foot">
       <Container maxW="container.lg">
         <Stack
-          direction={["column", , , "row"]}
-          align={["center", , , "initial"]}
+          direction={{base:"column", xl:"row"}}
+          align={{base:"center", xl:"initial"}}
           justify="space-between"
           fontSize={14}
           py={20}
@@ -21,24 +21,24 @@ export function Footer() {
             color="white"
             fontSize={30}
             fontWeight="bold"
-            pb={[10, , , 0]}
-            mt={[-10, , , 0]}
+            pb={{base:10, xl:0}}
+            mt={{base:-10, xl:0}}
           >
             Shortly
           </Text>
           <Stack
-            direction={["column", , , "row"]}
-            align={["center", , , "initial"]}
-            spacing={[10, , , 20]}
+            direction={{base:"column", xl:"row"}}
+            align={{base:"center", xl:"initial"}}
+            spacing={{base:10, xl:20}}
             color="white"
           >
             <Box>
-              <Text textAlign={["center", , , "initial"]}>Features </Text>
+              <Text textAlign={{base:"center", xl:"initial"}}>Features </Text>
               <Stack
                 spacing={2}
                 fontSize={12}
                 pt={6}
-                align={["center", , , "initial"]}
+                align={{base:"center", xl:"initial"}}
               >
                 <Link>Link Shortening</Link>
                 <Link>Branded Links</Link>
@@ -46,12 +46,12 @@ export function Footer() {
               </Stack>
             </Box>
             <Box>
-              <Text textAlign={["center", , , "initial"]}>Resources </Text>
+              <Text textAlign={{base:"center", xl:"initial"}}>Resources </Text>
               <Stack
                 spacing={2}
                 fontSize={12}
                 pt={6}
-                align={["center", , , "initial"]}
+                align={{base:"center", xl:"initial"}}
               >
                 <Link>Blog </Link>
                 <Link>Developers </Link>
@@ -59,12 +59,12 @@ export function Footer() {
               </Stack>
             </Box>
             <Box>
-              <Text textAlign={["center", , , "initial"]}>Company </Text>
+              <Text textAlign={{base:"center", xl:"initial"}}>Company </Text>
               <Stack
                 spacing={2}
                 fontSize={12}
                 pt={6}
-                align={["center", , , "initial"]}
+                align={{base:"center", xl:"initial"}}
               >
                 <Link>About </Link>
                 <Link>Our Team</Link>
@@ -78,7 +78,7 @@ export function Footer() {
             color="white"
             spacing={4}
             fontSize={20}
-            pt={[10, , , 0]}
+            pt={{base:10, xl:0}}
           >
             <Box _hover={{ color: "primary", cursor: "pointer" }}>
               <FaFacebookSquare />

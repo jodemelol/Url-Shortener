@@ -25,7 +25,7 @@ export function Navbar() {
         >
           <Image src={logo} alt={logo} />
           <Stack
-            display={["none", "none", "none", "flex"]}
+            display={{base:"none", xl:"flex"}}
             direction="row"
             spacing={4}
           >
@@ -53,7 +53,7 @@ export function Navbar() {
             Sign Up
           </Button>
         </Stack>
-        <Stack display={["flex", "none", "none", "none"]}>
+        <Stack display={{base:"flex", xl:"none"}}>
           <Menu>
             <MenuButton
               as={IconButton}

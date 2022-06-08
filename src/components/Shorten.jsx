@@ -46,9 +46,9 @@ export function Shorten() {
       <Box mt="-100px">
         <Container
           as="section"
-          maxW={["350px", "350px", "container.lg", "container.lg"]}
+          maxW={{base:"350px", xl:"container.lg"}}
           bgImg={backDesk}
-          height={["180px", , , 36]}
+          height={{base:"180px", xl:36}}
           bgColor="secondary"
           borderRadius={8}
           mt={20}
@@ -57,9 +57,9 @@ export function Shorten() {
         >
           <form onSubmit={(e) => handleSubmit(e)}>
             <Stack
-              direction={["column", "column", "row", "row"]}
+              direction={{base:"column", xl:"row"}}
               pos="relative"
-              top={["5", , , "50"]}
+              top={{base:5, xl:50}}
               px={6}
               spacing={8}
               align="center"
@@ -68,7 +68,7 @@ export function Shorten() {
                 bg="white"
                 placeholder="Shorten a link here..."
                 py={6}
-                w={["288px", , , "800px"]}
+                w={{base:"288px", xl:"800px"}}
                 value={url}
                 type="url"
                 onChange={(e) => {
@@ -80,7 +80,7 @@ export function Shorten() {
                 variant="primary"
                 px={10}
                 py={6}
-                w={["288px", , , "165px"]}
+                w={{base:"288px", xl:"165px"}}
               >
                 Shorten it!
               </Button>

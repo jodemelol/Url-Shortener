@@ -5,15 +5,15 @@ import boostMob from "../assets/bg-boost-mobile.svg";
 export function SectionBoost() {
   return (
     <VStack
-      bgImg={[boostMob, , , boostDesk]}
+      bgImg={{base:boostMob, xl:boostDesk}}
       bgColor="secondary"
       spacing={6}
-      pb={[20, , , 10]}
+      pb={{base:20, xl:10}}
     >
-      <Text fontSize={[28, , , 32]} fontWeight="bold" color="white" mt={16}>
+      <Text fontSize={{base:28, xl:32}} fontWeight="bold" color="white" mt={16}>
         Boost your links today
       </Text>
-      <Button variant="primary" borderRadius={20} px={8} py={[6, , , 0]}>
+      <Button variant="primary" borderRadius={20} px={8} py={{base:6, xl:0}}>
         Get Started
       </Button>
     </VStack>
